@@ -4,6 +4,9 @@
 set -e
 
 # Display commands being run.
+set -x
+
+# Display commands being run.
 # WARNING: please only enable 'set -x' if necessary for debugging, and be very
 #  careful if you handle credentials (e.g. from Keystore) with 'set -x':
 #  statements like "export VAR=$(cat /tmp/keystore/credentials)" will result in
